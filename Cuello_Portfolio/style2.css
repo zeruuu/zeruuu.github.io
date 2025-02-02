@@ -1,0 +1,155 @@
+/* Animations, design, etc */
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('Cuello_Portfolio\fonts\Coolvetica_Hv_Comp.ttf');
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes slideInFromBottom2 {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(1300%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(650%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* credits from uiverse.io */
+.section { 
+    width: 100%;
+    height: 100%;
+    --color: #E1E1E1;
+    background-color: #F3F3F3;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+}
+
+.menubar {
+    animation: slideInFromTop 2s ease-in-out 0s 1;
+    transition: background-color 1s ease-in;
+}
+
+.bottombar {
+    transition: background-color 1s ease-in;
+    animation: slideInFromBottom2 2s ease-in-out 0s 1;
+}
+
+#header {
+    text-shadow: 0 0 5px #000000, 0 0 10px #55509b;
+    transition: text-shadow 0.5s ease-out;
+    cursor: pointer;
+}
+
+#footer {
+    text-shadow: 0 0 5px #000000, 0 0 10px #55509b;
+    transition: text-shadow 0.5s ease-out;
+}
+
+#header:hover {
+    text-shadow: 0 0 10px #000000, 0 0 15px #ffffff;
+}
+
+.box1, .box2, .box3, .box4 {
+    animation: slideInFromBottom 1.7s ease-in-out 0s 1;
+}
+
+/* ------------------------------------------------ */
+
+#profile_desc, #progress_desc, #progress_desc2, #css1_desc,
+#css2_desc, #css3_desc, #css4_desc,
+#js_desc1, #js_desc2, #js_desc3, #js_desc4,
+#proj_desc1, #proj_desc2, #proj_desc3 {
+    text-shadow: 0 0 10px #d7d3ff;
+}
+
+#bocchi1gif, #explorephgif, #scheduleimg {
+    border-radius: 20px;
+    border: solid 3px #55509b;
+
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+#css_img {
+    border-radius: 20px;
+    border: solid 3px #D84040;
+
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+#js_gif {
+    border-radius: 20px;
+    border: solid 3px #E7D283;
+
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+#js_gif {
+    border-radius: 20px;
+    border: solid 3px #E7D283;
+
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+#proj_media {
+    border-radius: 20px;
+    border: solid 3px #97e783;
+
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+
+#arrow_about, #arrow_progress, #arrow_progress2, #arrow_css1, #arrow_css2 , #arrow_css3, #arrow_css4,
+#arrow_js1, #arrow_js2, #arrow_js3, #arrow_js4, #arrow_proj1, #arrow_proj2, #arrow_proj3 {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    
+    cursor: pointer;
+    transition: rotate 0.5s ease-in-out;
+}
+
