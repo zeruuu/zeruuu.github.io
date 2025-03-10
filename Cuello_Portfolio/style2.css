@@ -83,7 +83,7 @@
 #profile_desc, #progress_desc, #progress_desc2, #css1_desc,
 #css2_desc, #css3_desc, #css4_desc,
 #js_desc1, #js_desc2, #js_desc3, #js_desc4,
-#proj_desc1, #proj_desc2, #proj_desc3 {
+#proj_desc1, #proj_desc2, #proj_desc3, #proj_desc4 {
     text-shadow: 0 0 10px #d7d3ff;
 }
 
@@ -144,7 +144,7 @@
 
 
 #arrow_about, #arrow_progress, #arrow_progress2, #arrow_css1, #arrow_css2 , #arrow_css3, #arrow_css4,
-#arrow_js1, #arrow_js2, #arrow_js3, #arrow_js4, #arrow_proj1, #arrow_proj2, #arrow_proj3 {
+#arrow_js1, #arrow_js2, #arrow_js3, #arrow_js4, #arrow_proj1, #arrow_proj2, #arrow_proj3, #arrow_proj4 {
     width: 20px;
     height: 20px;
     margin-left: 5px;

@@ -562,3 +562,43 @@ function proj3_dropdown() {
         }
     }   
 }
+
+const arrow_proj4 = document.getElementById('arrow_proj4')
+const proj4_box = document.getElementsByClassName('project4')[0]
+const proj4_desc = document.getElementById('project_desc4')
+arrow_proj4.onclick = function() {proj4_dropdown()}
+proj4_box.onclick = function() {proj4_dropdown()}
+var arrow_proj4_toggle = false;
+
+function proj4_dropdown() {
+    let proj4_box = document.getElementsByClassName('project4')[0]
+    if (proj4_box) { 
+        if (!arrow_proj4_toggle ) {
+            arrow_proj4_toggle  = true
+            proj4_box .style.width = '465px'
+            proj4_box .style.height = '750px'
+            proj4_box .style.transitionDelay = '0s'
+
+            proj4_desc.style.transitionDelay = '0.8s, 0s, 0s' /* opa, wid, hei --- resize first before appear*/         
+            proj4_desc.style.opacity = '1'               
+            proj4_desc.style.width = '450px'
+            proj4_desc.style.height = '700px'
+
+            arrow_proj4.style.transitionDelay = '0.2s'
+            arrow_proj4.style.rotate = '90deg'
+        } else {
+            arrow_proj4_toggle = false
+            proj4_box.style.width = '200px'
+            proj4_box.style.height = '30px'
+            proj4_box.style.transitionDelay = '0.6s'
+
+            proj4_desc.style.transitionDelay = '0s, 1s, 1s' /* opa, wid, hei --- let opacity disappear first before resize*/
+            proj4_desc.style.opacity = '0'
+            proj4_desc.style.width = '50px'
+            proj4_desc.style.height = '65px'
+            
+            arrow_proj4.style.transitionDelay = '0.5s'
+            arrow_proj4.style.rotate = '0deg'
+        }
+    }   
+}

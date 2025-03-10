@@ -277,7 +277,7 @@ body, html, head {
     height: 30px;
 
     min-width: 200px;
-    max-height: 525px;
+    max-height: 700px;
 
     padding: 23px;
     margin: 15px;
@@ -291,7 +291,7 @@ body, html, head {
     cursor: pointer;
 }
 
-#project_desc1, #project_desc2, #project_desc3 {
+#project_desc1, #project_desc2, #project_desc3, #project_desc4 {
     display: flexbox;
     flex-wrap: wrap;
     overflow: hidden;
@@ -307,7 +307,7 @@ body, html, head {
     transition-delay: 1s, 0s, 0s;
 }
 
-#project1, #project3 {
+#project1, #project3, #project4 {
     width: 250px;
     min-width: 250px;
 }
